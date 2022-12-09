@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto+Slab:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+}
+
+
+.m-20{
+    margin: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+
+.card{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* overflow: hidden; */
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-icon{
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.card:hover .card-icon{
+    transform: scale(1.1);
+}
+
+.card-img{
+    width: 100%;
+    display: block;
+}
+
+.card-img-top{
+    border-radius : 15px 15px 0 0;
+}
+
+.card-img-bottom{
+    border-radius : 0 0 15px 15px;
+}
+
+.card-title{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: right;
+}
+
+.card-btn{
+    background-color: #000;
+    border: 1px solid black;
+    display: inline-block;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-btn-link{
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.half-outter{
+    margin: auto;
+    margin-bottom: -25px;
+    display: block;
+    width: 130px;
+    text-align: center;
+}
+
+.half-upper{
+    float: right;
+    margin-top: -25px;
+    position: relative;
+    margin-right: 20px;
+}

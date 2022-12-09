@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      .box {
+        height: 500px;
+        position: relative;
+      }
+
+      /* position absolute က scroll ဆွဲရင်ပါသွားတယ် */
+      .box-one {
+        position: absolute;
+        z-index: 3;
+        top: 100px;
+        right: 50px;
+      }
+      .box-two {
+        position: fixed;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+      }
+      .box-three {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box border border-3 border-primary m-5">
+      <div class="box-one p-3 bg-info"></div>
+      <div class="box-two p-4 bg-secondary"></div>
+      <div class="box-three p-5 bg-dark"></div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        ipsum officia expedita eaque sint quasi, sequi natus laboriosam qui cum
+        unde perferendis mollitia perspiciatis minima sit doloremque maxime
+        aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+        quas consequatur obcaecati accusamus aliquam, minus ipsa animi in
+        quisquam voluptates. Fuga consequatur optio non fugiat porro dicta quam
+        repellat nam?
+      </p>
+    </div>
+  </body>
+</html>
