@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sidebar {
+        background-color: gray;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* display: none; */
+        transform: translateX(-100%);
+        transition-duration: 0.5s;
+        transition-property: transform;
+      }
+
+      /* .sidebar.open::after {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.527);
+      } */
+      .sidebar.open {
+        /* display: block; */
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <button>Show</button>
+    <h1>Min Ga Lar Par</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nisi
+      sunt ea saepe, incidunt eligendi repellendus veniam autem illo amet
+      quidem! Itaque molestiae commodi sequi eum, tenetur necessitatibus
+      officiis aliquid.
+    </p>
+    <div class="sidebar"></div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: violet;
+        animation-name: moveRight;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        /* transform: translateX(300px); */
+
+        /*animation-direction: alternate-reverse; */
+      }
+      /* .box:hover {
+        background-color: rebeccapurple;
+      } */
+
+      @keyframes moveRight {
+        0% {
+          transform: translateX(200px);
+        }
+        100% {
+          transform: translateX(400px);
+        }
+      }
+
+      @keyframes changeColor {
+        /* start */
+        0% {
+          background-color: black rotateZ(0deg);
+        }
+
+        20% {
+          background-color: orange;
+          transform: translateX(300px);
+        }
+
+        40% {
+          background-color: pink;
+          transform: translateX(300px) translateY(300px);
+        }
+        60% {
+          background-color: green;
+          transform: translateX(0px) translateY(300px);
+        }
+        80% {
+          background-color: skyblue;
+          transform: translateX(0px) translateY(0px);
+        }
+        /* end */
+        100% {
+          background-color: violet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
