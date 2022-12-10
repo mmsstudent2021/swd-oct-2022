@@ -19,15 +19,24 @@
         transition-property: transform;
       }
 
-      /* .sidebar.open::after {
+      .sidebar.open::after {
         content: "";
         width: 100vw;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.527);
-      } */
+        animation: bg 0.5s 0.6s linear both;
+      }
+
+      @keyframes bg {
+        from {
+          background-color: transparent;
+        }
+        to {
+          background-color: rgba(0, 0, 0, 0.527);
+        }
+      }
       .sidebar.open {
         /* display: block; */
         transform: translateX(0);
