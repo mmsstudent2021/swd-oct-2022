@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+
+*{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid black;
+    /* padding: 10px; */
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-between; */
+}
+
+.brand{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+nav{
+
+    /* height: 300px; */
+    /* border: 2px solid black; */
+    /* padding: 10px; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.nav-link{
+
+    /* border-bottom: 2px solid black; */
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 0;
+    /* flex-grow: 1; */
+    /* padding: 10px; */
+
+}
+
+.nav-link:hover,.nav-link.active{
+    background-color: black;
+    color: white;
+}
+
+.nav-toggler{
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 25px;
+    align-self: stretch;
+    display: none;
+}
+
+.form{
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+    margin:0px auto;
+}
+
+.group{
+    /* border: 2px solid black; */
+    display:flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+}
+
+.form-label{
+    margin-bottom: 10px;
+} 
+
+.form-input{
+
+    border: 2px solid black;
+    padding: 10px;
+    color: red;
+    font-size: 15px;
+}
+
+.form-input:focus-visible{
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: red;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+
+}
+
+.confirm{
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width:780px) {
+    nav{
+        display: none;
+    }
+
+    nav.open{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-link{
+        width: auto;
+    }
+
+    .nav-toggler{
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "1-sushi",
+  "version": "1.0.0",
+  "description": "- Responsive Sushi Restaurant Website Design Using HTML CSS & JavaScript - Includes a dark and light mode. - Smooth scrolling in each section. - Contains animations when scrolling. - Developed first with the Mobile First methodology, then for desktop. - Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bedimcode/responsive-sushi-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bedimcode/responsive-sushi-website/issues"
+  },
+  "homepage": "https://github.com/bedimcode/responsive-sushi-website#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "remixicon": "^2.5.0"
+  }
+}

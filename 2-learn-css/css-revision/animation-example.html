@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        height: 3000px;
+      }
+      .box {
+        margin: 30px;
+        padding: 30px;
+        background-color: skyblue;
+      }
+
+      /* .box:nth-child(1) {
+        animation: shake 0.5s linear 3 both;
+      }
+
+      .box:nth-child(2) {
+        animation: shake 0.5s 0.1s linear 3 both;
+      }
+
+      .box:nth-child(3) {
+        animation: shake 0.5s 0.2s linear 3 both;
+      } */
+
+      /* Fade, Slide, Scale */
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+          /* background-color: blue; */
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide {
+        from {
+          transform: translateX(200%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(-30px);
+        }
+        25% {
+          transform: translateX(30px);
+        }
+        50% {
+          transform: translateX(-20px);
+        }
+        75% {
+          transform: translateX(15px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+      .poe1 {
+        width: 200px;
+      }
+
+      .scroll-to-up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        border: 5px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/imagehover.css/css/imagehover.css"
+    />
+  </head>
+  <body>
+    <div
+      id="one"
+      class="box animate__animated animate__slideInLeft animate__faster"
+    >
+      <h1>Min Ga Lar Par</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        soluta, enim in cumque quibusdam voluptatem distinctio ullam tenetur
+        commodi quam. Expedita praesentium nam tempore esse rerum. Repellendus
+        rerum non minus?
+      </p>
+    </div>
+
+    <div class="box animate__animated animate__slideInLeft">
+      <h1>Min Ga Lar Par</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        soluta, enim in cumque quibusdam voluptatem distinctio ullam tenetur
+        commodi quam. Expedita praesentium nam tempore esse rerum. Repellendus
+        rerum non minus?
+      </p>
+    </div>
+
+    <div class="box animate__animated animate__slideInLeft animate__slow">
+      <h1>Min Ga Lar Par</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        soluta, enim in cumque quibusdam voluptatem distinctio ullam tenetur
+        commodi quam. Expedita praesentium nam tempore esse rerum. Repellendus
+        rerum non minus?
+      </p>
+    </div>
+
+    <hr />
+
+    <figure class="imghvr-fade">
+      <img
+        class="poe1"
+        src="https://m.media-amazon.com/images/M/MV5BNjk5M2Y5MjQtNTcyNi00ZmQ1LThjM2QtNjdkYzljOWQ2MzhiXkEyXkFqcGdeQXVyOTcxNjY2Mjc@._V1_.jpg"
+      />
+      <figcaption>
+        <h3>Poe Lay</h3>
+        <p>Ayan chit pho kg tal byar .... 😍</p>
+      </figcaption>
+      <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-push-up">
+      <img
+        class="poe1"
+        src="https://m.media-amazon.com/images/M/MV5BNjk5M2Y5MjQtNTcyNi00ZmQ1LThjM2QtNjdkYzljOWQ2MzhiXkEyXkFqcGdeQXVyOTcxNjY2Mjc@._V1_.jpg"
+      />
+      <figcaption>
+        <h3>Poe Lay</h3>
+        <p>Ayan chit pho kg tal byar .... 😍</p>
+      </figcaption>
+      <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-reveal-up">
+      <img
+        class="poe1"
+        src="https://m.media-amazon.com/images/M/MV5BNjk5M2Y5MjQtNTcyNi00ZmQ1LThjM2QtNjdkYzljOWQ2MzhiXkEyXkFqcGdeQXVyOTcxNjY2Mjc@._V1_.jpg"
+      />
+      <figcaption>
+        <h3>Poe Lay</h3>
+        <p>Ayan chit pho kg tal byar .... 😍</p>
+      </figcaption>
+      <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-fold-left">
+      <img
+        class="poe1"
+        src="https://m.media-amazon.com/images/M/MV5BNjk5M2Y5MjQtNTcyNi00ZmQ1LThjM2QtNjdkYzljOWQ2MzhiXkEyXkFqcGdeQXVyOTcxNjY2Mjc@._V1_.jpg"
+      />
+      <figcaption>
+        <h3>Poe Lay</h3>
+        <p>Ayan chit pho kg tal byar .... 😍</p>
+      </figcaption>
+      <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <a href="#one" class="scroll-to-up">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-up animate__animated animate__bounce animate__infinite"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>
+    </a>
+  </body>
+</html>
