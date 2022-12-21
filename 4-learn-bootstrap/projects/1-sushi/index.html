@@ -1,230 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sushi</title>
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <title>Testing Sushi Page</title>
+    <meta name="title" content="Testing Sushi Page" />
+    <meta
+      name="description"
+      content="Bs and scss testing project, not for production"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mms-it.com/" />
+    <meta property="og:title" content="Testing Sushi Page" />
+    <meta
+      property="og:description"
+      content="Bs and scss testing project, not for production"
+    />
+    <meta
+      property="og:image"
+      content="https://poetic-pasca-3b4efd.netlify.app/preview.png"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" class="navbar-brand-logo" alt="">
-            Sushi
+          <img src="img/logo.png" class="navbar-brand-logo" alt="" />
+          Sushi
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="btn btn-link"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="ri-menu-2-fill"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#popular">Popular</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">Popular</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#recent">Recently</a>
-                </li>
-            </ul>
-            <div class="">
-                <i class="ri-moon-line"></i>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#recent">Recently</a>
+            </li>
+          </ul>
+          <div class="">
+            <i class="ri-moon-line"></i>
+          </div>
         </div>
-
-    </div>
-</nav>
-<main>
-    <section id="home" class="overflow-hidden">
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="overflow-hidden">
         <div class="container">
-            <div class="row justify-content-center align-items-center align-content-center min-vh-100">
-                <div class="col-12 col-md-6 col-xl-4">
-
-                    <div class="animate__animated animate__fadeInDown text-center text-md-start mb-5 mb-md-0">
-                        <div class="home-title title mb-4">
-                            <h1 class="display-5">
-                                Enjoy Delicious
-                            </h1>
-                            <div class="d-flex justify-content-center justify-content-md-start">
-                                <img src="img/home-sushi-title.png" class="me-2" alt="">
-                                <h1 class="display-5">Sushi Food</h1>
-                            </div>
-                        </div>
-
-                        <p class="w-75 mx-auto ms-md-0  mb-4">
-                            Enjoy a good dinner with the best dishes in
-                            the restaurant and improve your day.
-                        </p>
-
-                        <a href="#" class=" btn btn-primary btn-icon">
-                            Order Now <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
+          <div
+            class="row justify-content-center align-items-center align-content-center min-vh-100"
+          >
+            <div class="col-12 col-md-6 col-xl-4">
+              <div
+                class="animate__animated animate__fadeInDown text-center text-md-start mb-5 mb-md-0"
+              >
+                <div class="home-title title mb-4">
+                  <h1 class="display-5">Enjoy Delicious</h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <img src="img/home-sushi-title.png" class="me-2" alt="" />
+                    <h1 class="display-5">Sushi Food</h1>
+                  </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-7">
-                    <img src="img/home-sushi-rolls.png" class="w-100 d-block animate__animated animate__fadeInUp" alt="">
-                </div>
+
+                <p class="w-75 mx-auto ms-md-0 mb-4">
+                  Enjoy a good dinner with the best dishes in the restaurant and
+                  improve your day.
+                </p>
+
+                <a href="#" class="btn btn-primary btn-icon">
+                  Order Now <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
+            <div class="col-12 col-md-6 col-xl-7">
+              <img
+                src="img/home-sushi-rolls.png"
+                class="w-100 d-block animate__animated animate__fadeInUp"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="about" class="py-9">
+      </section>
+      <section id="about" class="py-9">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5 col-lg-4">
-                    <img src="img/about-sushi.png" class="d-block w-100" alt="">
-                </div>
-                <div class="col-md-6 col-lg-4 offset-1">
-                    <div class="">
-
-                        <h3 class="text-primary sub-title">About Us</h3>
-                        <div class="home-title title mb-4">
-                            <div class="d-flex">
-                                <h1 class="">
-                                    We Provide
-                                </h1>
-                                <img src="img/about-sushi-title.png" class="ms-2" alt="">
-
-                            </div>
-                            <h1 class="">Healthy Food</h1>
-
-                        </div>
-
-                        <p class="">
-                            Food comes to us from our relatives, whether they
-                            have wings or roots. This is how we consider food,
-                            it also has a culture. It has a history that passes
-                            from generation to generation.
-                        </p>
-                    </div>
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-4">
+              <img src="img/about-sushi.png" class="d-block w-100" alt="" />
             </div>
+            <div class="col-md-6 col-lg-4 offset-1">
+              <div class="">
+                <h3 class="text-primary sub-title">About Us</h3>
+                <div class="home-title title mb-4">
+                  <div class="d-flex">
+                    <h1 class="">We Provide</h1>
+                    <img src="img/about-sushi-title.png" class="ms-2" alt="" />
+                  </div>
+                  <h1 class="">Healthy Food</h1>
+                </div>
+
+                <p class="">
+                  Food comes to us from our relatives, whether they have wings
+                  or roots. This is how we consider food, it also has a culture.
+                  It has a history that passes from generation to generation.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="popular" class="py-9">
+      </section>
+      <section id="popular" class="py-9">
         <div class="container">
-            <div class="row mb-9">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h3 class="text-primary sub-title">The Best Food</h3>
-                        <h1 class="title">
-                            Popular Dishes
-                        </h1>
-                    </div>
-                </div>
+          <div class="row mb-9">
+            <div class="col-12">
+              <div class="text-center">
+                <h3 class="text-primary sub-title">The Best Food</h3>
+                <h1 class="title">Popular Dishes</h1>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-lg-3">
-                    <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
-                        <img src="img/popular-onigiri.png" class="w-100 d-block" alt="">
-                        <div class="text-center">
-                            <p class="h4 title">Onigiri</p>
-                            <p>Japanese Dish</p>
-                            <p class="text-primary h4 fw-bold">$10.99</p>
-                        </div>
-                    </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-3">
+              <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
+                <img
+                  src="img/popular-onigiri.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h4 title">Onigiri</p>
+                  <p>Japanese Dish</p>
+                  <p class="text-primary h4 fw-bold">$10.99</p>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
-                        <img src="img/popular-spring-rols.png" class="w-100 d-block" alt="">
-                        <div class="text-center">
-                            <p class="h4 title">Spring Rolls</p>
-                            <p>Japanese Dish</p>
-                            <p class="text-primary h4 fw-bold">$19.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
-                        <img src="img/popular-sushi-rolls.png" class="w-100 d-block" alt="">
-                        <div class="text-center">
-                            <p class="h4 title">Sushi Rolls</p>
-                            <p>Japanese Dish</p>
-                            <p class="text-primary h4 fw-bold">$15.99</p>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
+                <img
+                  src="img/popular-spring-rols.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h4 title">Spring Rolls</p>
+                  <p>Japanese Dish</p>
+                  <p class="text-primary h4 fw-bold">$19.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="dish-card shadow rounded-4 mb-7 mb-md-0 p-4 pt-0">
+                <img
+                  src="img/popular-sushi-rolls.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h4 title">Sushi Rolls</p>
+                  <p>Japanese Dish</p>
+                  <p class="text-primary h4 fw-bold">$15.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="recent" class="py-9">
+      </section>
+      <section id="recent" class="py-9">
         <div class="container">
-            <div class="row mb-9 justify-content-center">
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="mb-7 mb-md-0">
-
-                        <h3 class="text-primary sub-title">Recently Added</h3>
-                        <div class="home-title title mb-4">
-                            <div class="d-flex">
-                                <h1 class="">
-                                    Sushi Samurai
-                                </h1>
-                                <img src="img/spinach-leaf.png" style="transform: rotate(45deg) translateX(10px)" class="ms-2" alt="">
-
-                            </div>
-                            <h1 class="">Salmón Cheese</h1>
-
-                        </div>
-
-                        <p class="">
-                            Take a look at what's new. And do not deprive
-                            yourself of a good meal, enjoy and be happy.
-                        </p>
-                        <a href="#" class=" btn btn-primary btn-icon">
-                            Order Now <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
+          <div class="row mb-9 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="mb-7 mb-md-0">
+                <h3 class="text-primary sub-title">Recently Added</h3>
+                <div class="home-title title mb-4">
+                  <div class="d-flex">
+                    <h1 class="">Sushi Samurai</h1>
+                    <img
+                      src="img/spinach-leaf.png"
+                      style="transform: rotate(45deg) translateX(10px)"
+                      class="ms-2"
+                      alt=""
+                    />
+                  </div>
+                  <h1 class="">Salmón Cheese</h1>
                 </div>
-                <div class="col-md-5 offset-1">
-                    <img src="img/recently-salmon-sushi.png" class="d-block w-100" alt="">
-                </div>
+
+                <p class="">
+                  Take a look at what's new. And do not deprive yourself of a
+                  good meal, enjoy and be happy.
+                </p>
+                <a href="#" class="btn btn-primary btn-icon">
+                  Order Now <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
+            <div class="col-md-5 offset-1">
+              <img
+                src="img/recently-salmon-sushi.png"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
         <div class="">
-            <div class="container bg-dark newsletter">
-                <div class="row align-items-center rounded-5 py-5 justify-content-center">
-                    <div class="col-md-5 col-lg-4">
-                        <img src="img/newsletter-sushi.png" class="d-block w-100" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-5 offset-xl-1">
-                        <div class="p-3 p-lg-5">
-
-                            <h3 class="text-primary sub-title">Newsletter</h3>
-                            <div class="home-title text-white title mb-4">
-                                <h1 class="mb-4">
-                                    Subscribe For
-                                    <br>
-                                    Offer Updates
-                                </h1>
-                            </div>
-                            <div class="bg-white rounded-pill p-2 ps-4 d-flex  align-items-center">
-                                <input type="text" placeholder="Enter email" class=" bg-transparent border-0 me-1 flex-grow-1">
-                                <button class="btn btn-primary btn-icon text-nowrap" >
-                                    <span class="d-none d-md-none d-lg-inline" >Order Now</span>
-                                    <i class="ri-send-plane-2-line"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
+          <div class="container newsletter">
+            <img src="img/spinach-leaf.png" class="leaf" alt="" />
+            <div
+              class="row align-items-center rounded-5 py-5 justify-content-center"
+            >
+              <div class="col-md-5 col-lg-4">
+                <img
+                  src="img/newsletter-sushi.png"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-5 offset-xl-1">
+                <div class="p-3 p-lg-5">
+                  <h3 class="text-primary sub-title">Newsletter</h3>
+                  <div class="home-title text-white title mb-4">
+                    <h1 class="mb-4">
+                      Subscribe For
+                      <br />
+                      Offer Updates
+                    </h1>
+                  </div>
+                  <div
+                    class="bg-white rounded-pill p-2 ps-4 d-flex align-items-center"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Enter email"
+                      class="bg-transparent border-0 me-1 flex-grow-1"
+                    />
+                    <button class="btn btn-primary btn-icon text-nowrap">
+                      <span class="d-none d-md-none d-lg-inline"
+                        >Subscribe</span
+                      >
+                      <i class="ri-send-plane-2-line"></i>
+                    </button>
+                  </div>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-</main>
-
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

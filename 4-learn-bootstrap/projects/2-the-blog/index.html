@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-journals brand-logo"></i>
+        </a>
+        <div class="input-group w-25">
+            <span class="input-group-text border-end-0">
+                <i class="bi bi-search "></i>
+            </span>
+            <input type="text" placeholder="Search in My Blog" class="form-control border-start-0">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="bi bi-pencil-square"></i> Write
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-success rounded-pill text-white" href="register.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Sign In</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/user.png" class="border rounded-circle" height="30" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section id="blog">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-md-8 ">
+                    <div class="banner my-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-secondary py-1 px-2 me-2 rounded-circle">
+                                <i class="bi bi-tag-fill"></i>
+                            </div>
+                            <h1 class="fw-bold">Programming</h1>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-sm btn-success me-2">Follow</button>
+                            <button class="btn btn-sm btn-outline-success">Start Writing</button>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="detail.html" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="detail.html" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article >
+                            <hr>
+                            <div class="writer d-flex align-items-center mb-3">
+                                <img class="rounded-circle me-3" height="30" src="https://miro.medium.com/fit/c/48/48/1*lN-sUdZBVqIDLJ64gvS7kQ.jpeg" alt="">
+                                <a href="#" class="text-decoration-none small  me-3 text-dark">
+                                    Osama (Oisee) Ishtiaq
+                                </a>
+                                <a href="#" class="text-decoration-none small text-black-50">
+                                    1 day ago
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="d-flex h-100 flex-column">
+                                        <a href="#" class="h4 d-block text-decoration-none fw-bold text-dark">
+                                            I am switching from VS Code to Vim
+                                        </a>
+                                        <a href="#" class="text-decoration-none para text-black-50">
+                                            Ever since I started programming professionally in 2015, I’ve heard a lot of nice things about VIM. People who use it swear by it’s efficiency and the productivity boost it provides. I too always thought Vim was
+                                        </a>
+                                        <div class="d-flex  justify-content-between align-items-center mt-auto">
+                                            <div class="">
+                                                <a href="#" class="btn btn-secondary btn-sm me-2">
+                                                    Programming
+                                                </a>
+                                                <span>4 min read</span>
+                                            </div>
+                                            <i class="bi bi-bookmark-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <img class="w-100" src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png" alt="">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-5">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <h4 class="fw-bold">268K</h4>
+                                <p>Stories</p>
+                            </div>
+                            <div class="col-6">
+                                <h4 class="fw-bold">92K</h4>
+                                <p>Writers</p>
+                            </div>
+                        </div>
+                        <div class="users">
+
+                            <img alt="rachelle palmer" class="" src="https://miro.medium.com/fit/c/72/72/1*7QIlJiZoiWzpgNlBqYCWiQ.jpeg" width="36" height="36" >
+
+                            <img alt="Josiah Brown" class="" src="https://miro.medium.com/fit/c/72/72/0*9s6F9o9L9b0_y8mU" width="36" height="36">
+
+                            <img alt="Pavlos Simas" class="" src="https://miro.medium.com/fit/c/72/72/1*IOa-gQGfCcDGfahwydSdOw.jpeg" width="36" height="36" >
+
+                            <img alt="alexander grossmann" class="" src="https://miro.medium.com/fit/c/72/72/1*gS892MB4Lm10WpTnuk2_mw.jpeg" width="36" height="36" >
+
+                            <img alt="Rajkumar Gaur" class="" src="https://miro.medium.com/fit/c/72/72/1*2rLuP9TqnXpiAEeOOemb1A.jpeg" width="36" height="36" >
+
+                            <img alt="Ran Eliahu" class="" src="https://miro.medium.com/fit/c/72/72/1*CGzd_240eLAMF3RpK06tXA@2x.jpeg" width="36" height="36" >
+
+                            <img alt="Eric Veciana" class="" src="https://miro.medium.com/fit/c/72/72/1*VaWSCAWTUiIa_CDZqEOLMg.jpeg" width="36" height="36" >
+
+                            <img alt="Acid Coder" class="" src="https://miro.medium.com/fit/c/72/72/1*lcxG99uC0QzOcB-wQ5Y2ow.jpeg" width="36" height="36" >
+
+                            <img alt="<{Blake†Codez}/>" class="" src="https://miro.medium.com/fit/c/72/72/1*Ijr4TKRLVONqSNMbqEcR6w.jpeg" width="36" height="36" >
+
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="position-sticky" style="top:30px">
+
+                        <div class="topic mb-5">
+                            <p class="fw-bold mt-5 mb-3">Related Topics</p>
+                            <div class="">
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Software Development
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Java Script
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Web Development
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Coding
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Technology
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Python
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Data Science
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Software Engineering
+                                </a>
+                                <a href="#" class="btn btn-secondary mb-2">
+                                    Machine Learning
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="top-writers mb-5">
+                            <p class="fw-bold mt-5 mb-3">Top Writers</p>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                            <div class="writer mb-3 row g-3">
+                                <div class="col-2">
+                                    <img class="rounded-circle w-100" src="https://miro.medium.com/fit/c/64/64/0*u9Ha3uTCjEmW_3gn.gif" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p class="small fw-bold mb-0">
+                                        javinpaul
+                                    </p>
+                                    <p class="small text-truncate">
+                                        I am Java programmer, blogger, working on Java, J2EE, UNIX, FIX Protocol. I share Java tips on http://javarevisited.blogspot.com and http://java67.com
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-success">Follow</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <p class="text-black-50">Visit the archive</p>
+                            <div class="">
+                                <a href="#" class="text-decoration-none text-black-50">
+                                    Line One
+                                </a>
+                                <a href="#" class="text-decoration-none text-black-50">
+                                    Line One
+                                </a>
+                                <a href="#" class="text-decoration-none text-black-50">
+                                    Line One
+                                </a>
+                                <a href="#" class="text-decoration-none text-black-50">
+                                    Line One
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

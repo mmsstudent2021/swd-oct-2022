@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+//font-family: 'IBM Plex Serif', serif;
+//font-family: 'Montserrat', sans-serif;
+
+$font-family-sans-serif : 'Montserrat', sans-serif;
+$navbar-nav-link-padding-x : 1.5rem;
+
+//$border-radius : 2rem;
+
+$secondary : rgb(237, 237, 237);
+
+$input-bg : rgb(250, 250, 250);
+$input-border-color : #ffffff00;
+$input-group-addon-bg:rgb(250, 250, 250);
+$input-border-radius : 2rem;
+
+$btn-border-radius-sm : 2rem;
+$btn-padding-x-sm : 1rem;
+
+$btn-border-radius : 2rem;
+$btn-padding-x : 1rem;
+
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+  //xxl: 1320px
+);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.para{
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.brand-logo{
+  font-size: 2rem;
+}
+
+.users{
+
+}
+.users img{
+  border-radius: 50%;
+  margin-left: -15px;
+  border:2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.users img:first-child{
+  margin-left: 0;
+}
+.personal-social-links a{
+  margin-right: 15px;
+}
+.personal-social-links a:last-child{
+  margin-right: 0;
+}
+
+.personal-social-links a:hover{
+  color: black !important;
+}
+
+.article-detail.para{
+  line-height: 2;
+}
