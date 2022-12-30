@@ -146,7 +146,7 @@
 
 // console.log(i);
 
-const fruits = ["apple", "orange", "mango", "banana"];
+// const fruits = ["apple", "orange", "mango", "banana"];
 
 // for (let i = 0; i < fruits.length; i++) {
 //   console.log(i, fruits[i]);
@@ -160,16 +160,16 @@ const fruits = ["apple", "orange", "mango", "banana"];
 //   console.log(x, fruits[x]);
 // }
 
-const obj = {
-  a: "aaa",
-  b: "bbb",
-  c: "ccc",
-  d: "ddd",
-};
+// const obj = {
+//   a: "aaa",
+//   b: "bbb",
+//   c: "ccc",
+//   d: "ddd",
+// };
 
-for (x in obj) {
-  console.log(x, obj[x]);
-}
+// for (x in obj) {
+//   console.log(x, obj[x]);
+// }
 
 // for (x of obj) {
 //   console.log(x);

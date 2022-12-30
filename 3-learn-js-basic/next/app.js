@@ -187,7 +187,7 @@ class Student {
 
 // aa.x().y().z();
 
-const d = new Date();
+// const d = new Date();
 
 // d.setHours(d.getHours() + 300);
 // d.setMonth(d.getMonth() + 4);
@@ -197,8 +197,8 @@ const d = new Date();
 
 // console.log(d.toDateString());
 // console.log(d.toTimeString());
-console.log(d.toLocaleDateString());
-console.log(d.toLocaleTimeString());
+// console.log(d.toLocaleDateString());
+// console.log(d.toLocaleTimeString());
 
 // console.log(d.getDate());
 // console.log(d.getMonth());
@@ -209,3 +209,139 @@ console.log(d.toLocaleTimeString());
 // console.log(d.getSeconds());
 // console.log(d.getMilliseconds());
 // console.log(d.getTime());
+
+// const str = new String("    min ga lar par byar    ");
+// const str = "min ga lar par byar";
+// console.log(typeof str);
+// console.log(str);
+// console.log(str.toUpperCase());
+// console.log(str.length);
+// console.log(str.substr(4, 6));
+// console.log(str.substring(4, 10));
+// console.log(str.search("za"));
+// console.log(str.replace("ga", "za"));
+// console.log(str.replace("ar", "xxx"));
+// console.log(str.replaceAll("ar", "xxx"));
+
+// console.log(str.length);
+// console.log(str.trimEnd());
+// 0000 0000 0000 0000 , 353456
+// const luckyNumber = "32A4R25";
+// console.log(luckyNumber.padStart(16, "A"));
+// console.log(luckyNumber.padEnd(16, "A"));
+// str to array
+// console.log(str.trim().split(" "));
+// console.log(str.trim().split(" ", 3));
+
+// console.log(str);
+
+const num = new Number("234.63642");
+const strNum = "123.345345";
+const weight = "160.58kg";
+// console.log(typeof num);
+// console.log(num);
+// console.log(num.toString());
+// console.log(num.toFixed(2));
+// console.log(num.toPrecision(2));
+// console.log(Number(weight));
+
+// console.log(parseInt(weight));
+// console.log(parseFloat(weight));
+
+// console.log(isNaN("hein" - "htet"));
+// console.log(eval("2+6"));
+
+// console.log(Math);
+
+// console.log(7 - 5);
+// console.log(Math.abs(5 - 7));
+// console.log(Math.round(123.75));
+// console.log(Math.ceil(123.15));
+// console.log(Math.floor(123.75));
+
+// console.log(Math.ceil(Math.random() * 10));
+// console.log(Math.floor(Math.random() * 10));
+
+// console.log(2 ** 5);
+// console.log(Math.pow(2, 5));
+
+// console.log(Math.sqrt(128));
+
+// function run(x, y) {
+//   return x + y;
+// }
+
+// console.log(run(1, 2));
+
+// function run(x, y) {
+//   return y(x);
+// }
+
+// console.log(
+//   run(5, function (x) {
+//     return x + 2;
+//   })
+// );
+
+// console.log(
+//   run(5, function (x) {
+//     return x * 2;
+//   })
+// );
+
+// const run = function (x, y) {
+//   return x + y;
+// };
+
+// arrow function
+// const run = (x, y) => x + y;
+
+// const run = () => "this is arrow fun";
+// const run = () => "this is arrow fun";
+// const run = (x) => "this is arrow fun " + x;
+// const run = (x, y) => "this is arrow fun " + (x + y);
+// const run = (x, y) => {
+//   let result = x * y;
+//   return "arrow fun --- " + result;
+// };
+
+// console.log(run(15, 20));
+
+// const obj = {
+//   a: "a",
+//   b() {
+//     console.log(this);
+//     return "this is b";
+//   },
+
+//   c: function () {
+//     console.log(this);
+//     return "this is c";
+//   },
+
+//   d: () => {
+//     console.log(this);
+
+//     return "this is d";
+//   },
+// };
+
+// console.log(obj.b());
+// console.log(obj.c());
+// console.log(obj.d());
+
+// const sum = new Function("a", "b", "return a + b");
+
+// console.dir(sum);
+
+// console.log(sum(1, 2));
+
+function run(x, y) {
+  console.log(arguments);
+  return x + y;
+}
+
+console.dir(run);
+// console.dir(run.name);
+// console.log(run.bind(null, 4, 5,6,5,6).call());
+console.log(run(1, 2));
