@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>min ga lar par</h1> -->
+
+    <script>
+      const box = document.createDocumentFragment();
+
+      const h1 = document.createElement("h1");
+      h1.innerText = "min ga lar par";
+
+      const p = document.createElement("p");
+      p.innerText = "san kyi tar par";
+
+      const h2 = document.createElement("h2");
+      h2.innerText = "h2 h2";
+
+      box.append(h1);
+      box.append(p);
+      box.prepend(h2);
+
+      //   if (false) {
+      //     document.body.append(box);
+      //   }
+
+      true && document.body.append(box);
+
+      console.dir(box);
+
+      //   function createLi(text) {
+      //     const li = document.createElement("li");
+      //     li.innerText = text;
+      //     return li;
+      //   }
+
+      //   const ul = document.createElement("ul");
+      //   document.body.append(ul);
+
+      //   ul.append(createLi("Apple"));
+      //   ul.append(createLi("Orange"));
+      //   ul.append(createLi("Mango"));
+      //   ul.append(createLi("Banana"));
+
+      //   ul.append(li1);
+
+      //   const li2 = document.createElement("li");
+      //   li2.innerText = "Orange";
+      //   ul.append(li2);
+
+      //   const li3 = document.createElement("li");
+      //   li3.innerText = "Mango";
+      //   ul.append(li3);
+
+      //   // create element h1
+      //   const h1 = document.createElement("h1");
+      //   h1.innerText = "Min Ga Lar Par";
+      //   console.log(h1);
+
+      //   const p = document.createElement("p");
+      //   p.innerText =
+      //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam obcaecati iste assumenda ullam. Quod incidunt porro ab cum reprehenderit quae culpa dolore itaque fuga ullam iusto a, consequatur labore!";
+
+      //   console.log(p);
+
+      //   const a = document.createElement("a");
+      //   a.innerHTML = "Google";
+      //   a.href = "https://google.com";
+      //   a.target = "_blank";
+      //   console.log(a);
+
+      //   const img = document.createElement("img");
+      //   img.src = "./poe.jpeg";
+      //   console.log(img);
+
+      //   // put h1 elemnt to body
+      //   document.body.append(h1);
+      //   document.body.append(p);
+      //   document.body.append(a);
+      //   document.body.append(img);
+    </script>
+  </body>
+</html>

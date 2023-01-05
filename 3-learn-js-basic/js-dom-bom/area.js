@@ -7,8 +7,17 @@ const breadth = document.getElementById("breadth");
 const calculate = document.getElementById("calculate");
 const records = document.getElementById("records");
 
-calculate.onclick = function () {
+// functions
+const run = (x, y) => x + y;
+
+const clearResult = () => {
+  // console.log("clear result function");
+  result.innerText = null;
+};
+
+const calcArea = () => {
   // console.dir(width)
+  // console.log("calcArea function");
 
   const area = width.valueAsNumber * breadth.valueAsNumber;
 
@@ -17,13 +26,18 @@ calculate.onclick = function () {
 
   // remove value
   width.value = breadth.value = null;
-//   width.valueAsNumber = breadth.valueAsNumber = null;
+  //   width.valueAsNumber = breadth.valueAsNumber = null;
 };
 
-clear.onclick = () => (result.innerText = null);
+const storeResult = () => {
+  // console.log("storeResult function");
 
-//<li></li>
-store.onclick = () => {
   records.innerHTML += `<li>${result.innerText}</li>`;
-  result.innerText = null;
+  clearResult();
 };
+
+// process
+calculate.onclick = calcArea;
+clear.onclick = clearResult;
+//<li></li>
+store.onclick = storeResult;

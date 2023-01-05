@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-5" id="output">Your Text Here</div>
+          <div
+            style="bottom: 30px; left: 0; right: 0; max-width: 500px"
+            class="bg-white position-fixed mx-auto border rounded pb-3 px-2 row g-3"
+          >
+            <div class="col-12">
+              <div class="d-flex justify-content-between">
+                <label class="form-label" for="">Say Something</label>
+                <div>Count : <span id="count">0</span></div>
+              </div>
+              <textarea
+                class="form-control"
+                name=""
+                id="text"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="col">
+              <label class="form-label" for="">Font Family</label>
+              <select class="form-select" id="fontFamily" name="" id="">
+                <option value="">Select Font</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="">
+                <label class="form-label" for="">Select Color</label>
+                <input
+                  type="color"
+                  id="color"
+                  class="form-control w-100 form-control-color"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <label class="form-label" for="">Fontsize</label>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="16"
+                id="fontSize"
+                class="form-range"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./tc.js"></script>
+  </body>
+</html>
