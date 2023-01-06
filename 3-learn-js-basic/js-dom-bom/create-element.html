@@ -7,31 +7,52 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <h1>min ga lar par</h1> -->
+    <span>san kyi tar</span>
+    hello min ga lar par
+    <ul>
+      <li>apple</li>
+      <li>ornage</li>
+      <li>mango</li>
+      <li>banana</li>
+    </ul>
 
     <script>
-      const box = document.createDocumentFragment();
+      const textNode = document.createTextNode("cccc");
+      const ul = document.querySelector("ul");
+      ul.before(textNode);
 
-      const h1 = document.createElement("h1");
-      h1.innerText = "min ga lar par";
+      // ul.previousElementSibling.innerText = "aaaaaa";
 
-      const p = document.createElement("p");
-      p.innerText = "san kyi tar par";
+      // console.dir(ul.childNodes);
+      // console.dir(ul.children);
+      // console.log(ul.previousSibling);
+      // console.log(ul.previousElementSibling);
 
-      const h2 = document.createElement("h2");
-      h2.innerText = "h2 h2";
+      // console.log(ul.innerText);
+      // console.log(ul.innerHTML);
 
-      box.append(h1);
-      box.append(p);
-      box.prepend(h2);
+      // const box = document.createDocumentFragment();
+
+      // const h1 = document.createElement("h1");
+      // h1.innerText = "min ga lar par";
+
+      // const p = document.createElement("p");
+      // p.innerText = "san kyi tar par";
+
+      // const h2 = document.createElement("h2");
+      // h2.innerText = "h2 h2";
+
+      // box.append(h1);
+      // box.append(p);
+      // box.prepend(h2);
 
       //   if (false) {
       //     document.body.append(box);
       //   }
 
-      true && document.body.append(box);
+      // true && document.body.append(box);
 
-      console.dir(box);
+      // console.dir(box);
 
       //   function createLi(text) {
       //     const li = document.createElement("li");
