@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$enable-rounded: false;
+$component-active-bg: black;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

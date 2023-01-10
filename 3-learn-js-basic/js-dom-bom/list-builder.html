@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./css/lb.css" />
   </head>
   <body>
     <div class="container">
@@ -18,9 +15,14 @@
             <h4 class="my-3">List Builder</h4>
             <div class="input-group mb-3">
               <input type="text" id="textInput" class="form-control" />
-              <button id="createBtn" class="btn btn-dark">Create</button>
+              <button id="createBtn" class="btn btn-dark">
+                <i class="bi bi-plus-circle"></i> Add List
+              </button>
             </div>
-
+            <div class="d-flex justify-content-between">
+              <p>Total <span class="badge bg-black" id="total">0</span></p>
+              <p>Done <span class="badge bg-black" id="doneTotal">0</span></p>
+            </div>
             <ul id="lists" class="list-group"></ul>
           </div>
         </div>

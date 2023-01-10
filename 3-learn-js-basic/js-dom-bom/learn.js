@@ -58,13 +58,13 @@
 // h1.addEventListener("mouseout", () => console.log("Mouse Out Event"));
 // h1.addEventListener("click", (e) => console.log(e, "Mouse Move Event"));
 
-const input = document.querySelector("input");
-// const select = document.querySelector("select");
+// const input = document.querySelector("input");
+// // const select = document.querySelector("select");
 
-input.addEventListener("change", function (event) {
-  // console.log(this.valueAsDate);
-  console.log(event.target.valueAsDate);
-});
+// input.addEventListener("change", function (event) {
+//   // console.log(this.valueAsDate);
+//   console.log(event.target.valueAsDate);
+// });
 
 // input.addEventListener("change", () => console.log("change Event"));
 // select.addEventListener("change", () => console.log("change Event"));
@@ -99,3 +99,13 @@ input.addEventListener("change", function (event) {
 //     e.preventDefault()
 //   console.log(e);
 // });
+
+const btn = document.querySelector("#btn");
+const showConsole = (event) => {
+  console.log(event);
+  // btn.removeEventListener("click", showConsole);
+};
+
+btn.addEventListener("click", showConsole);
+
+// console.log(new Event());
