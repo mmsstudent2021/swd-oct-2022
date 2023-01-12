@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/invoice.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="my-3">Invoice App</h1>
+          <div class="border mb-3 p-3">
+            <form id="invoiceForm">
+              <div class="row">
+                <div class="col">
+                  <div class="">
+                    <label for="" class="form-label">Select Sevice</label>
+                    <select
+                      class="form-select"
+                      name=""
+                      id="selectService"
+                    ></select>
+                  </div>
+                </div>
+                <div class="col">
+                  <label for="" class="form-label">Input Quantity</label>
+                  <input type="number" class="form-control" id="quantity" />
+                </div>
+                <div class="col">
+                  <button class="btn btn-dark w-100 h-100">
+                    <i class="bi bi-plus-circle"></i>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th class="text-end">Quantity</th>
+                <th class="text-end">Unit Price</th>
+                <th class="text-end">Total</th>
+              </tr>
+            </thead>
+            <tbody id="lists"></tbody>
+            <tfoot>
+              <tr>
+                <td class="text-end" colspan="3">Sub Total</td>
+                <td class="text-end">$ <span id="subTotal">0</span></td>
+              </tr>
+              <tr>
+                <td class="text-end" colspan="3">Tax (5%)</td>
+                <td class="text-end">$ <span id="tax">0</span></td>
+              </tr>
+              <tr>
+                <td class="text-end" colspan="3">Total</td>
+                <td class="text-end">$ <span id="total">0</span></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/invoice.js"></script>
+  </body>
+</html>
