@@ -8,61 +8,141 @@
     <link rel="stylesheet" href="./css/invoice.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="my-3">Invoice App</h1>
-          <div class="border mb-3 p-3">
-            <form id="invoiceForm">
-              <div class="row">
-                <div class="col">
-                  <div class="">
-                    <label for="" class="form-label">Select Sevice</label>
-                    <select
-                      class="form-select"
-                      name=""
-                      id="selectService"
-                    ></select>
+    <div id="app">
+      <div id="sideBar" class="side-bar position-fixed w-25 vh-100 bg-black">
+        <div
+          class="d-flex justify-content-between text-white p-2 align-items-center"
+        >
+          <h4>MMS IT</h4>
+          <i class="bi bi-x-lg menu"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d d-flex justify-content-between align-items-center">
+              <h1 class="my-3">
+                <i class="bi bi-list menu"></i>
+                Invoice App
+              </h1>
+              <button
+                class="btn btn-outline-dark d-print-none"
+                onclick="print()"
+              >
+                <i class="bi bi-printer"></i>
+                Print
+              </button>
+            </div>
+            <div class="border mb-3 p-3 d-print-none">
+              <form id="invoiceForm" class="">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="">
+                      <label for="" class="form-label">
+                        Select Service
+                        <span
+                          id="addServiceOpenBtn"
+                          class="badge bg-black rounded-pill"
+                        >
+                          Add Service
+                        </span>
+                      </label>
+                      <select
+                        class="form-select"
+                        name=""
+                        id="selectService"
+                        required
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="" class="form-label"> Quantity</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="quantity"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-dark w-100 h-100">
+                      <i class="bi bi-plus-circle"></i>
+                      Add
+                    </button>
                   </div>
                 </div>
-                <div class="col">
-                  <label for="" class="form-label">Input Quantity</label>
-                  <input type="number" class="form-control" id="quantity" />
-                </div>
-                <div class="col">
-                  <button class="btn btn-dark w-100 h-100">
-                    <i class="bi bi-plus-circle"></i>
-                    Add
-                  </button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
+            <table class="table table-bordered d-none" id="listTable">
+              <thead>
+                <tr>
+                  <th class="w-50">Service</th>
+                  <th class="text-end">Quantity</th>
+                  <th class="text-end">Unit Price</th>
+                  <th class="text-end">Total</th>
+                </tr>
+              </thead>
+              <tbody id="lists"></tbody>
+              <tfoot>
+                <tr>
+                  <td class="text-end" colspan="3">Sub Total</td>
+                  <td class="text-end">$ <span id="subTotal">0</span></td>
+                </tr>
+                <tr>
+                  <td class="text-end" colspan="3">Tax (5%)</td>
+                  <td class="text-end">$ <span id="tax">0</span></td>
+                </tr>
+                <tr>
+                  <td class="text-end" colspan="3">Total</td>
+                  <td class="text-end">$ <span id="total">0</span></td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Service</th>
-                <th class="text-end">Quantity</th>
-                <th class="text-end">Unit Price</th>
-                <th class="text-end">Total</th>
-              </tr>
-            </thead>
-            <tbody id="lists"></tbody>
-            <tfoot>
-              <tr>
-                <td class="text-end" colspan="3">Sub Total</td>
-                <td class="text-end">$ <span id="subTotal">0</span></td>
-              </tr>
-              <tr>
-                <td class="text-end" colspan="3">Tax (5%)</td>
-                <td class="text-end">$ <span id="tax">0</span></td>
-              </tr>
-              <tr>
-                <td class="text-end" colspan="3">Total</td>
-                <td class="text-end">$ <span id="total">0</span></td>
-              </tr>
-            </tfoot>
-          </table>
+        </div>
+      </div>
+
+      <h1 class="d-none d-print-block">This will show in Print</h1>
+
+      <div
+        id="addServiceModal"
+        class="d-none position-fixed bg-transparent-50 w-100 top-0 end-0"
+      >
+        <div class="row min-vh-100 justify-content-center align-items-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="bg-white p-5">
+              <h4>Add New Service</h4>
+              <hr />
+              <form action="" id="addServiceForm">
+                <div class="mb-3">
+                  <label for="" class="form-label">Service Title</label>
+                  <input
+                    type="text"
+                    name="serviceTitle"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-5">
+                  <label for="" class="form-label">Price</label>
+                  <input
+                    type="number"
+                    name="servicePrice"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <button
+                  id="closeServiceModalBtn"
+                  type="button"
+                  class="btn btn-outline-dark"
+                >
+                  close
+                </button>
+                <button class="btn btn-dark">Add New</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

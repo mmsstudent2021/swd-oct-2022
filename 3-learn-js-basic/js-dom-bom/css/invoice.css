@@ -10498,5 +10498,30 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.del-btn {
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+tr:hover .del-btn {
+  transform: scale(1);
+}
+
+.bg-transparent-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.side-bar {
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.side-bar.active {
+  transform: translateX(0);
+}
+
+.menu:active {
+  transform: scale(0.8);
+}
 
 /*# sourceMappingURL=invoice.css.map */
