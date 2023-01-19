@@ -8,13 +8,13 @@ $component-active-bg: black;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.del-btn {
+.dropdown-icon {
   //   display: none;
   transform: scale(0);
   transition: 0.5s;
 }
 
-tr:hover .del-btn {
+tr:hover .dropdown-icon {
   //   display: inline;
   transform: scale(1);
 }

@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./css/invoice.css" />
   </head>
   <body>
     <div class="container">
@@ -17,12 +14,28 @@
           <div class="my-5" id="output">Your Text Here</div>
           <div
             style="bottom: 30px; left: 0; right: 0; max-width: 500px"
-            class="bg-white position-fixed mx-auto border rounded pb-3 px-2 row g-3"
+            class="bg-white position-fixed mx-auto border pb-3 px-2 row g-3"
           >
             <div class="col-12">
-              <div class="d-flex justify-content-between">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <label class="form-label" for="">Say Something</label>
-                <div>Count : <span id="count">0</span></div>
+                <div class="d-flex align-items-center">
+                  <button
+                    class="btn btn-sm btn-outline-dark me-2"
+                    id="speechToText"
+                  >
+                    <i class="bi bi-mic"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-dark me-2"
+                    id="textToSpeech"
+                  >
+                    <i class="bi bi-volume-up"></i>
+                  </button>
+                  <div class="">Count : <span id="count">0</span></div>
+                </div>
               </div>
               <textarea
                 class="form-control"
@@ -63,6 +76,6 @@
       </div>
     </div>
 
-    <script src="./tc.js"></script>
+    <script src="./js/tc.js"></script>
   </body>
 </html>

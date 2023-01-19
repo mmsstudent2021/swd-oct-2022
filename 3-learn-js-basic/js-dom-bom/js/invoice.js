@@ -33,11 +33,12 @@ const tax = document.querySelector("#tax");
 const total = document.querySelector("#total");
 const listTable = document.querySelector("#listTable");
 const addServiceOpenBtn = document.querySelector("#addServiceOpenBtn");
-const addServiceModal = document.querySelector("#addServiceModal");
+// const addServiceModal = document.querySelector("#addServiceModal");
 const closeServiceModalBtn = document.querySelector("#closeServiceModalBtn");
 const addServiceForm = document.querySelector("#addServiceForm");
 const menu = document.querySelectorAll(".menu");
 const sideBar = document.querySelector("#sideBar");
+const addServiceModal = new bootstrap.Modal("#addServiceModal");
 
 //function
 const createTr = (service, quantity) => {
@@ -48,7 +49,23 @@ const createTr = (service, quantity) => {
   tr.innerHTML = `
     <td class=" d-flex justify-content-between">
     ${service.title}
-    <i class="bi bi-trash3 text-danger del-btn"></i>
+    <div class="dropdown">
+              <i
+                class="bi bi-three-dots-vertical dropdown-icon"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </i>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item del-btn" href="#">Delete</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+    
     </td>
     <td class=" text-end list-quantity">${quantity}</td>
     <td class=" text-end">${service.price}</td>
@@ -135,16 +152,17 @@ app.addEventListener("click", (event) => {
   }
 });
 
-addServiceOpenBtn.addEventListener("click", () => {
+addServiceOpenBtn.addEventListener("dblclick", () => {
   console.log("add service");
   // 1 idea create element
   // 2 idea hide show
-  addServiceModal.classList.remove("d-none");
+  // addServiceModal.classList.remove("d-none");
+  addServiceModal.show();
 });
 
-closeServiceModalBtn.addEventListener("click", () => {
-  addServiceModal.classList.add("d-none");
-});
+// closeServiceModalBtn.addEventListener("click", () => {
+//   addServiceModal.classList.add("d-none");
+// });
 
 addServiceForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -168,11 +186,12 @@ addServiceForm.addEventListener("submit", (event) => {
 
   // close modal
   event.target.reset();
-  addServiceModal.classList.add("d-none");
+  // addServiceModal.classList.add("d-none");
+  addServiceModal.hide();
 });
 
-menu.forEach((el) => {
-  el.addEventListener("click", () => {
-    sideBar.classList.toggle("active");
-  });
-});
+// menu.forEach((el) => {
+//   el.addEventListener("click", () => {
+//     sideBar.classList.toggle("active");
+//   });
+// });

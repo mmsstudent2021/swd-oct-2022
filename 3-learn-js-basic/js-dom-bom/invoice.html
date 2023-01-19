@@ -9,20 +9,25 @@
   </head>
   <body>
     <div id="app">
-      <div id="sideBar" class="side-bar position-fixed w-25 vh-100 bg-black">
+      <!-- <div id="sideBar" class="side-bar position-fixed w-25 vh-100 bg-black">
         <div
           class="d-flex justify-content-between text-white p-2 align-items-center"
         >
           <h4>MMS IT</h4>
           <i class="bi bi-x-lg menu"></i>
         </div>
-      </div>
+      </div> -->
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="d d-flex justify-content-between align-items-center">
               <h1 class="my-3">
-                <i class="bi bi-list menu"></i>
+                <i
+                  class="bi bi-list menu"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                ></i>
                 Invoice App
               </h1>
               <button
@@ -73,6 +78,7 @@
                 </div>
               </form>
             </div>
+            
             <table class="table table-bordered d-none" id="listTable">
               <thead>
                 <tr>
@@ -104,15 +110,28 @@
 
       <h1 class="d-none d-print-block">This will show in Print</h1>
 
+      <!-- Modal -->
       <div
+        class="modal fade"
         id="addServiceModal"
-        class="d-none position-fixed bg-transparent-50 w-100 top-0 end-0"
+        tabindex="-1"
+        aria-labelledby="addServiceModalLabel"
+        aria-hidden="true"
       >
-        <div class="row min-vh-100 justify-content-center align-items-center">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="bg-white p-5">
-              <h4>Add New Service</h4>
-              <hr />
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="addServiceModalLabel">
+                Add New Service
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
               <form action="" id="addServiceForm">
                 <div class="mb-3">
                   <label for="" class="form-label">Service Title</label>
@@ -132,21 +151,63 @@
                     required
                   />
                 </div>
-                <button
-                  id="closeServiceModalBtn"
-                  type="button"
-                  class="btn btn-outline-dark"
-                >
-                  close
-                </button>
-                <button class="btn btn-dark">Add New</button>
               </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                id="closeServiceModalBtn"
+                type="button"
+                data-bs-dismiss="modal"
+                class="btn btn-outline-dark"
+              >
+                close
+              </button>
+              <button class="btn btn-dark" form="addServiceForm">
+                Add New
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/invoice.js"></script>
   </body>
 </html>
