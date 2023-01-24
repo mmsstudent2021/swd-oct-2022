@@ -68,3 +68,26 @@ createSlideShow.addEventListener("click", () => {
   createCarousel(allPhoto.map((el) => el.src));
   //   createCarousel();
 });
+
+uploaderUI.addEventListener("dragover", (event) => {
+  event.preventDefault();
+  // console.log(event);
+});
+
+uploaderUI.addEventListener("drop", (event) => {
+  event.preventDefault();
+  console.log(event.dataTransfer.files);
+
+  [...event.dataTransfer.files].forEach((file) => {
+    const img = new Image();
+
+    const reader = new FileReader();
+    reader.addEventListener("load", (event) => {
+      console.log(event.target);
+      img.src = event.target.result;
+      img.classList.add("photo", "me-2");
+      photos.append(img);
+    });
+    reader.readAsDataURL(file);
+  });
+});
