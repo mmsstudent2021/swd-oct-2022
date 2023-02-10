@@ -29,13 +29,31 @@
         <div class="row">
           <div class="col-12">
             <div
-              class="d-flex justify-content-between align-items-center border shadow-sm p-3 my-3"
+              class="d-flex justify-content-between align-items-center bg-white border shadow-sm p-3 my-3"
+              id="header"
             >
               <h3 class="fw-bold mb-0">
                 <i class="bi bi-bag-fill"></i>
                 My Shop
               </h3>
-              <button class="btn btn-lg btn-dark">Cart</button>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control me-2"
+                  id="searchInput"
+                  placeholder="Search Product"
+                />
+                <button class="btn btn-dark" id="cart">Cart</button>
+              </div>
+            </div>
+
+            <div class="mb-3" id="productCategories">
+              <button
+                class="btn btn-sm btn-outline-dark cat active text-capitalize"
+                cat="all"
+              >
+                all
+              </button>
             </div>
 
             <div class="row g-3" id="productCards"></div>

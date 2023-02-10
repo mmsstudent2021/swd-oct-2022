@@ -574,3 +574,14 @@ const products = [
     ],
   },
 ];
+
+const categories = [...new Set(products.map((product) => product.category))];
+// for (product of products) {
+//   // console.log(product.category);
+//   // categories.push(product.category);
+//   if (!categories.includes(product.category)) {
+//     categories.push(product.category);
+//   }
+// }
+
+// console.log(categories);
